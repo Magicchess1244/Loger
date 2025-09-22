@@ -11,7 +11,7 @@ def log_ip():
     # Store IP in file with timestamp
     timestamp = datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S")
     
-    with open("user_ips.txt", "a") as file:
+    with open("user.txt", "a") as file:
         file.write(f"{timestamp} - {user_ip}\n")
     
     return "Finished"
